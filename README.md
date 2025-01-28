@@ -70,6 +70,16 @@ The default dataset within the ai-bot-workspace contain 30-minutes candles for m
 The 3 last settings will be kept as default (1000 USDT, ~337 given candles before start,
 0.2% transaction fee)
 
+Now, your bot should be able to hold firm and never crash.. . but may lose a bunch of money overall
+![Balance](.github/assets/image4.png)
+
+The first thing you want to check is probably your final result on the top right corner of the chart.
+ot 1 stderr window will warn you in case something is going wrong. You should use this specific output to debug your bot or check what it’s doing.
+![Error](.github/assets/image5.png)
+
+The other windows, Engine stdout and Bot 1 log, will roughly provide you the same details.
+![Logs](.github/assets/image6.png)
+
 ### Installation
 1. Clone the repository:
    ```bash
