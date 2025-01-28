@@ -29,6 +29,29 @@ This project involves the development of a high-frequency trading bot capable of
 
 ---
 
+## Trading Strategy
+The trading bot employs multiple technical indicators to generate buy and sell signals. The strategy is designed to leverage short-term market trends for profitability.
+
+### Indicators Used:
+1. **EMA50**: 50-period Exponential Moving Average to identify momentum.
+2. **Price Predictions**: Predictive modeling of future prices based on historical data.
+3. **Directional Indicators (DI+ and DI-)**: Measures the strength and direction of the market trend.
+4. **Bollinger Bands**: Calculates upper and lower price bands to determine volatility.
+
+### Buy Signal Conditions:
+- Price is above the lower Bollinger Band.
+- DI+ is greater than DI- (indicating an upward trend).
+- Predicted price is higher than the current price.
+- EMAs indicate upward momentum.
+- **OR**: When the sell stack is zero (forced buy condition).
+
+### Sell Signal Conditions:
+- Price is below the upper Bollinger Band.
+- Predicted price is lower than the current price.
+- DI+ is less than DI- (indicating a downward trend).
+- EMAs indicate downward momentum.
+
+---
 ## Project Setup
 ### Prerequisites
 - Programming language of your choice (ensure compatibility with provided client-server interface).
