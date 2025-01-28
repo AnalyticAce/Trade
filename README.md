@@ -81,6 +81,8 @@ ot 1 stderr window will warn you in case something is going wrong. You should us
 The other windows, Engine stdout and Bot 1 log, will roughly provide you the same details.
 ![Logs](.github/assets/image6.png)
 
+Congratulations! Your environment is now fully set up.
+
 ### Installation
 1. Clone the repository:
    ```bash
@@ -120,7 +122,32 @@ The other windows, Engine stdout and Bot 1 log, will roughly provide you the sam
 
 ---
 
-## Usage Guidelines
+## Technical Guidelines (*in case your thinking of build a similar bot*)
+
+### Technicalities
+Transaction fee
+  - by default, the bot pays a 0.2% transaction fee for each order it places
+Timebank :
+  - allow some additional thinking time when needed
+  - start the game with 10 secs
+  - each time an action is requested, the timebank is increased (100-500ms)
+  - the time needed by the bot to request is deducted from the timebank
+  - if the bot is too slow, the timebank will be exhausted
+
+### BOT ORDERS
+no_moves OR pass
+  - you bot don’t take any position
+buy CurrencyPaidWith_CurrencyReceived amount
+  - amount is an integer which specifies how much to buy of the CurrencyReceived (2nd symbol)
+  - buy USDT_BTC 1 means the bot wants to buy 1 BTC in USDT
+  - the cost of the operation would be 1 * [current USDT_BTC closing price]
+  - when buying 1 BTC, the bot will actually receive 0.998 BTC
+sell CurrencyReceived_CurrencySold amount
+  - amount is an integer which specifies how much to sell of the CurrencySold (2nd symbol)
+  - sell USDT_BTC 1 means the bot wants to sell 1 BTC in USDT
+  - the bot will received 1 * [current USDT_BTC closing price] - [fee]
+  - when selling some currency for 1 USDT, the bot will actually receive 0.998 USD
+
 ### Input Format
 1. **Settings**:
    ```
