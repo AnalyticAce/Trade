@@ -75,6 +75,7 @@ Download it [from the Github source](https://github.com/jmerle/ai-bot-workspace/
    - If you’re on Windows, you sould use ai-bot-workspace-setup-2.4.3.exe
 
 The executables launch ai-bot-workspace’s portal. There, you must select Crypto Trader
+
 ![Portal](.github/assets/image2.png)
 
 Before the first launch, you have to configure some settings:
@@ -82,6 +83,7 @@ Before the first launch, you have to configure some settings:
  - the path to a .csv file with candlestick chart data
  - the amount of time in seconds between each candle
 Below are 2 screenshots showing how it should be configured once you’re done here:
+
 ![Settings](.github/assets/image3.png)
 
 > [!WARNING]
@@ -94,6 +96,7 @@ The 3 last settings will be kept as default (1000 USDT, ~337 given candles befor
 0.2% transaction fee)
 
 Now, your bot should be able to hold firm and never crash.. . but may lose a bunch of money overall
+
 ![Balance](.github/assets/image4.png)
 
 The first thing you want to check is probably your final result on the top right corner of the chart.
@@ -102,6 +105,7 @@ ot 1 stderr window will warn you in case something is going wrong. You should us
 ![Error](.github/assets/image5.png)
 
 The other windows, Engine stdout and Bot 1 log, will roughly provide you the same details.
+
 ![Logs](.github/assets/image6.png)
 
 Congratulations! Your environment is now fully set up.
