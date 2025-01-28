@@ -1,4 +1,4 @@
-# Trade Bot Project
+# BTC Trading Bot Project
 
 ## Overview
 This project involves the development of a high-frequency trading bot capable of processing thousands of orders per second, aimed at revolutionizing the trade markets. The bot will use advanced algorithms to adapt to market changes dynamically, minimize overfitting, and maximize profits. This project also serves as a practical introduction to algorithmic trading concepts and techniques.
