@@ -65,6 +65,10 @@ Below are 2 screenshots showing how it should be configured once you’re done h
 > You are encouraged to play with all the values to test the adaptability of your bot.
 The default dataset within the ai-bot-workspace contain 30-minutes candles for multiple pairs.
 
+> [!NOTE]
+> All provided datasets, as the ones used for evaluation, only contain 60-minutes candles for USDT_BTC trading pair.
+The 3 last settings will be kept as default (1000 USDT, ~337 given candles before start,
+0.2% transaction fee)
 
 ### Installation
 1. Clone the repository:
