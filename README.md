@@ -35,15 +35,42 @@ This project involves the development of a high-frequency trading bot capable of
 - Access to training datasets and the generator provided.
 - A reverse-engineering setup for analyzing server logs.
 
+### Trading environment Setup
+Let’s play around with a trading environment.
+![Env](.github/assets/image1.png)
+
+You are to craft a simple client bot, that:
+- parse given information,
+- make a simple forecast
+- issue a sell/buy order accordingly.
+
+The program *ai-bot-workspace* is the tool used for testing and evaluating this project.
+Here’s a short guide to get you started.
+
+Download it [from the Github source](https://github.com/jmerle/ai-bot-workspace/releases/) OR along with this subject.
+   - If you’re on Linux, you should use ai-bot-workspace-2.4.3-x86_64.AppImage
+   - If you’re on Windows, you sould use ai-bot-workspace-setup-2.4.3.exe
+
+The executables launch ai-bot-workspace’s portal. There, you must select Crypto Trader
+![Portal](.github/assets/image2.png)
+
+Before the first launch, you have to configure some settings:
+ - the command to run your executable (interpreter + path)
+ - the path to a .csv file with candlestick chart data
+ - the amount of time in seconds between each candle
+Below are 2 screenshots showing how it should be configured once you’re done here:
+![Settings](.github/assets/image3.png)
+
+> [!WARNING]
+> You are encouraged to play with all the values to test the adaptability of your bot.
+The default dataset within the ai-bot-workspace contain 30-minutes candles for multiple pairs.
+
+
 ### Installation
 1. Clone the repository:
    ```bash
    git clone <repository_url>
    cd trade-bot
-   ```
-2. Install required dependencies (if applicable):
-   ```bash
-   pip install -r requirements.txt  # Example for Python
    ```
 3. Setup the client-server interface:
    - Download the client-server bootstrap files.
