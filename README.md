@@ -75,6 +75,7 @@ Now, your bot should be able to hold firm and never crash.. . but may lose a bun
 
 The first thing you want to check is probably your final result on the top right corner of the chart.
 ot 1 stderr window will warn you in case something is going wrong. You should use this specific output to debug your bot or check what it’s doing.
+
 ![Error](.github/assets/image5.png)
 
 The other windows, Engine stdout and Bot 1 log, will roughly provide you the same details.
